@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mock USPTO | Methodology</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="methodology">
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">MU</div>
+        <div>
+          <div class="brand-title">Mock USPTO</div>
+          <div class="brand-subtitle">Prosecution Suite</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Examination Console</a>
+        <a class="nav-link" href="analysis.html">Analysis Engine</a>
+        <a class="nav-link" href="cases.html">Case Database</a>
+        <a class="nav-link" href="claim-chart.html">Claim Chart</a>
+        <a class="nav-link" href="office-action.html">Office Action</a>
+        <a class="nav-link" href="methodology.html">Methodology</a>
+        <a class="nav-link" href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero compact">
+        <div>
+          <span class="eyebrow">Scoring Method</span>
+          <h1>A weighted examiner-style framework for translating patent review into visible metrics.</h1>
+          <p class="hero-copy">This preserves the multi-page methodology view from the earlier design and ties it to the actual scoring logic used by the console, chart page, and office-action page.</p>
+        </div>
+      </section>
+
+      <section class="grid details-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Primary factors</h3>
+            <span class="pill">Current default weights</span>
+          </div>
+          <div id="weightsTable" class="weights-table"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Recommendation bands</h3>
+            <span class="pill accent">Score translation</span>
+          </div>
+          <div class="band-row"><span>85–100</span><strong>Allowance leaning</strong></div>
+          <div class="band-row"><span>70–84</span><strong>Office action leaning</strong></div>
+          <div class="band-row"><span>Below 70</span><strong>Rejection leaning</strong></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
